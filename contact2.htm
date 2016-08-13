@@ -1,0 +1,69 @@
+
+
+
+<html>
+<head>
+<title>Appraisal Contact Form</title>
+</head>
+<body>
+
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Contact: Aircraft Appraiser</h3>
+
+ <form action="http://www.SnapHost.com/captcha/send.aspx" method="post" id="myform">
+ <input type="hidden" id="skip_WhereToSend" name="skip_WhereToSend"
+ value="appraiser@airplaneappraiser.com" />
+ <input type="hidden" id="skip_Subject" name="skip_Subject"
+ value="Contact Appraiser" />
+ <input type="hidden" id="skip_WhereToReturn" name="skip_WhereToReturn"
+ value="www.airplaneappraiser.com" />
+ <input type="hidden" id="skip_SnapHostID" name="skip_SnapHostID"
+ value="BGX2FFNBU4YL" />
+
+
+
+
+
+ <p align="left">Your Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" name="Name" size="50\"><br>
+  Your Email Address: <input type="text" name="EMail" size="50"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Your Message:
+  <textarea rows="5" name="Message" cols="50"></textarea><br><br>
+
+<input type="text" name="CaptchaBox" />
+
+
+<table cellspacing="0" border="0" cellpadding="8"
+ style="background-color:#ffcc66;">
+ <tr><td colspan="2" style="padding-bottom:1px;">
+ <a href="http://www.snaphost.com/captcha/ReadyForms/" alt="email form" title="email form" >email form</a></td></tr>
+ <tr valign="bottom"><td>
+ <a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a><br />
+ <a href="http://www.snaphost.com/captcha"><img id="CaptchaImage"
+ alt="captcha in html" style="border-width:0px;"
+ title="captcha in html"
+ src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=BGX2FFNBU4YL" /></a>
+ </td><td>  <br /><i>Enter Captcha code</i><br />
+ <input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text"
+ style="width:130px; height:48px; font-size:38px;" maxlength="6" /><br />
+ </td></tr></table>
+ <script type="text/javascript">
+ function ReloadCaptchaImage(captchaImageId) {
+ var obj = document.getElementById(captchaImageId);
+ var src = obj.src;
+ var date = new Date();
+ var pos = src.indexOf('&rad=');
+ if (pos >= 0) { src = src.substr(0, pos); }
+ obj.src = src + '&rad=' + date.getTime();
+ return false; }
+ </script>
+
+
+<input type="submit" value="Submit" /> </p>
+</form>
+
+
+
+</body>
+</html>
